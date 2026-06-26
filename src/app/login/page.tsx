@@ -9,7 +9,6 @@ export default function LoginPage() {
 
   async function handleLogin(e: React.FormEvent) {
     e.preventDefault();
-
     setMessage("Duke dërguar linkun...");
 
     const { error } = await supabase.auth.signInWithOtp({
@@ -36,7 +35,7 @@ export default function LoginPage() {
         <h1 className="text-4xl font-black">Hyr në portal</h1>
 
         <p className="mt-4 text-slate-300">
-          Vendos email-in tënd për të hyrë në panelin e Presidencës së ZVA Kamëz.
+          Vendos email-in tënd për të marrë linkun e hyrjes.
         </p>
 
         <input
